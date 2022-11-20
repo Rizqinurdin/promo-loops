@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-family: Poppins;
+}
+
+.navbar-store {
+    margin-top: 0;
+    background-color: #f5f5fb;
+    box-shadow: 0px 4px 5px #cacad1;
+
+    @include media-breakpoint-up(md) {
+        background-color: transparent;
+        box-shadow: none;
+}
+}
+
+/* Desktop Version */
+@media (min-width: 992px) {
+    .nav-link {
+        text-transform: uppercase;
+        font-size: 15px;
+    }
+
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0B63DC;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+}
+
+
+.card {
+    border-radius: 40px;
+}
+
+.content p{
+    font-size: 13px;
+}
+
+.page-dashboard {
+    background-color: #FAF7F0;
+}
